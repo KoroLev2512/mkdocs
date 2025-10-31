@@ -141,7 +141,9 @@ MIT License
 
 ## Автор
 
-MkDocs Custom Theme Team
+**[Yurii Korolev](about.md)**
+
+Frontend разработчик, стремящийся к fullstack. Студент магистратуры ITMO University. Опыт работы с JavaScript, React, Vue, Python и многими другими технологиями.
 
 ---
 
