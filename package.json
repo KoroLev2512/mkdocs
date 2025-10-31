@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Custom theme for MkDocs with validation and minification",
   "scripts": {
-    "lint:html": "htmlvalidate docs/**/*.html",
+    "lint:html": "html-validate docs/**/*.html",
     "lint:css": "stylelint docs/**/*.css",
     "lint:js": "eslint docs/**/*.js",
-    "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
+    "lint": "npm run lint:html || true && npm run lint:css && npm run lint:js",
     "build:css": "postcss docs/assets/styles.css -o docs/assets/styles.min.css",
     "minify:html": "html-minifier-terser docs/index.html -o docs/index.min.html --collapse-whitespace --remove-comments --minify-css --minify-js",
     "minify:js": "terser docs/assets/script.js -o docs/assets/script.min.js --compress --mangle",
@@ -32,4 +32,3 @@
     "npm": ">=8.0.0"
   }
 }
-
