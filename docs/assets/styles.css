@@ -4,6 +4,17 @@
   --md-default-fg-color: #e6e7eb;
   --md-primary-fg-color: #6ea8fe;
   --md-accent-fg-color: #7c6cff;
+  --md-code-bg-color: #12141a;
+  --md-code-fg-color: #e6e7eb;
+}
+
+/* Dark theme header - make it darker */
+[data-md-color-scheme="slate"] .md-header {
+  background-color: #0b0c0f !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__title {
+  background-color: #12141a !important;
 }
 
 /* Ensure all text is visible in dark theme */
@@ -62,14 +73,35 @@
   --shadow: 0 8px 28px rgba(0,0,0,0.35);
 }
 
-* { box-sizing: border-box; }
-html, body { height: 100%; }
-
-body {
-  margin: 0;
+/* Only apply custom styles to non-MkDocs pages */
+html:not([data-md-color-scheme]) body,
+html[data-md-color-scheme="default"] body,
+html[data-md-color-scheme="slate"] body {
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Only apply dark background to custom pages, not MkDocs */
+html:not([data-md-color-scheme]) body,
+html:not([data-md-color-scheme]) .container {
+  margin: 0;
   background: linear-gradient(180deg, #0b0c0f 0%, #0e1016 60%, #0b0c0f 100%);
   color: var(--text);
+  min-height: 100vh;
+}
+
+/* Custom header and footer only for non-MkDocs pages */
+html:not([data-md-color-scheme]) .site-header,
+html:not([data-md-color-scheme]) .site-footer {
+  display: block;
+}
+
+/* Hide custom header/footer on MkDocs pages */
+html[data-md-color-scheme] .site-header,
+html[data-md-color-scheme] .site-footer,
+html[data-md-color-scheme] .hero,
+html[data-md-color-scheme] .section,
+html[data-md-color-scheme] .cta {
+  display: none !important;
 }
 
 .container {
