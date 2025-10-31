@@ -144,7 +144,3 @@ MIT License
 **[Yurii Korolev](about.md)**
 
 Frontend разработчик, стремящийся к fullstack. Студент магистратуры ITMO University. Опыт работы с JavaScript, React, Vue, Python и многими другими технологиями.
-
----
-
-> Дизайн вдохновлен макетом: [Figma Projects](https://www.figma.com/design/fq2JhlHlCT1obHrqgijbi8/Projects?node-id=4567-27349&m=dev)
