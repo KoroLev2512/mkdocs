@@ -14,8 +14,7 @@ theme:
     - search.highlight
 
 nav:
-  - Home: index.html
-  - Documentation: index.md
+  - Home: index.md
 
 extra:
   social:
