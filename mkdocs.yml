@@ -13,14 +13,12 @@ theme:
     - search.suggest
     - search.highlight
   palette:
-    # Light mode (default)
     - scheme: default
       primary: indigo
       accent: purple
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Dark mode
     - scheme: slate
       primary: indigo
       accent: purple
