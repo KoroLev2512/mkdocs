@@ -20,7 +20,7 @@ theme:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: indigo
+      primary: black
       accent: purple
       toggle:
         icon: material/brightness-4
