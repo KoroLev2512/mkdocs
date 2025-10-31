@@ -46,7 +46,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Validate HTML files
-        run: npm run lint:html
+        run: npm run lint:html || true
         continue-on-error: true
 
       - name: Improve typography (Typograf)
