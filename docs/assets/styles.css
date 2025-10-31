@@ -6,6 +6,9 @@
   --md-accent-fg-color: #7c6cff;
   --md-code-bg-color: #12141a;
   --md-code-fg-color: #e6e7eb;
+  --md-typeset-a-color: #6ea8fe;
+  --md-nav-bg-color--slate: #0b0c0f;
+  --md-nav-selected-item: #7c6cff;
 }
 
 /* Dark theme header and navbar - make it darker */
@@ -27,6 +30,22 @@
 
 [data-md-color-scheme="slate"] .md-nav__source {
   background-color: #12141a !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar {
+  background-color: #0b0c0f !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary {
+  background-color: #0b0c0f !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar__scrollwrap {
+  background-color: #0b0c0f !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item--section {
+  background-color: #0b0c0f !important;
 }
 
 /* Ensure all text is visible in dark theme */
