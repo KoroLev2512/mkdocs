@@ -8,12 +8,24 @@
   --md-code-fg-color: #e6e7eb;
 }
 
-/* Dark theme header - make it darker */
+/* Dark theme header and navbar - make it darker */
 [data-md-color-scheme="slate"] .md-header {
   background-color: #0b0c0f !important;
 }
 
 [data-md-color-scheme="slate"] .md-nav__title {
+  background-color: #12141a !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav {
+  background-color: #0b0c0f !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary {
+  background-color: #0b0c0f !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__source {
   background-color: #12141a !important;
 }
 

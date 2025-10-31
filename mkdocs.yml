@@ -36,7 +36,7 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com
+      link: https://github.com/KoroLev2512/mkdocs
 
 extra_css:
   - assets/styles.css
