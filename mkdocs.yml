@@ -13,7 +13,7 @@ theme:
     - search.suggest
     - search.highlight
   palette:
-    # Light mode
+    # Light mode (default)
     - scheme: default
       primary: indigo
       accent: purple
@@ -27,6 +27,9 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
 
 nav:
   - Home: index.md
