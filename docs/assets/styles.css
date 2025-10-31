@@ -19,6 +19,22 @@
   background-color: #0b0c0f !important;
 }
 
+[data-md-color-scheme="slate"] .md-tabs__list {
+  background-color: #0b0c0f !important;
+}
+
+[data-md-color-scheme="slate"] .md-tabs__item {
+  background-color: #0b0c0f !important;
+}
+
+[data-md-color-scheme="slate"] .md-header__inner {
+  background-color: #0b0c0f !important;
+}
+
+[data-md-color-scheme="slate"] .md-header__title {
+  background-color: transparent !important;
+}
+
 [data-md-color-scheme="slate"] .md-nav__title {
   background-color: #12141a !important;
 }
