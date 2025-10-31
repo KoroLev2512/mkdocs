@@ -1,0 +1,19 @@
+{
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "element-required-attributes": "off",
+    "no-inline-style": "off",
+    "prefer-native-element": "off",
+    "valid-id": "warn",
+    "no-missing-references": "warn",
+    "aria-label-misuse": "warn"
+  },
+  "transform": {
+    "^docs/.*": {
+      "rules": {
+        "no-inline-style": "off"
+      }
+    }
+  }
+}
+

@@ -1,5 +1,28 @@
-site_name: My Static Site
+site_name: MkDocs Custom Theme
+site_description: Кастомная тема для MkDocs на чистом HTML, CSS и JavaScript. Адаптивный дизайн, быстрая загрузка, типографика и минификация без внешних зависимостей.
+site_author: MkDocs Custom Theme Team
+site_url: https://yourusername.github.io/mkdocs/
+
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+
 nav:
-  - Home: index.md
+  - Home: index.html
+  - Documentation: index.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com
+
+extra_css:
+  - assets/styles.css
+extra_javascript:
+  - assets/script.js

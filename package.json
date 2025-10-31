@@ -1,0 +1,35 @@
+{
+  "name": "mkdocs-custom-theme",
+  "version": "1.0.0",
+  "description": "Custom theme for MkDocs with validation and minification",
+  "scripts": {
+    "lint:html": "htmlvalidate docs/**/*.html",
+    "lint:css": "stylelint docs/**/*.css",
+    "lint:js": "eslint docs/**/*.js",
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
+    "build:css": "postcss docs/assets/styles.css -o docs/assets/styles.min.css",
+    "minify:html": "html-minifier-terser docs/index.html -o docs/index.min.html --collapse-whitespace --remove-comments --minify-css --minify-js",
+    "minify:js": "terser docs/assets/script.js -o docs/assets/script.min.js --compress --mangle",
+    "build:frontend": "npm run build:css && npm run minify:js",
+    "typograf": "node tools/typograf.js",
+    "test": "npm run lint"
+  },
+  "devDependencies": {
+    "html-validate": "^9.0.0",
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "eslint": "^8.54.0",
+    "html-minifier-terser": "^7.2.0",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "terser": "^5.24.0",
+    "typograf": "^7.6.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
+

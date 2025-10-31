@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Основные метаданные -->
+  <title>MkDocs Custom Theme — Современная тема для документации</title>
+  <meta name="title" content="MkDocs Custom Theme — Современная тема для документации">
+  <meta name="description" content="Кастомная тема для MkDocs на чистом HTML, CSS и JavaScript. Адаптивный дизайн, быстрая загрузка, типографика и минификация без внешних зависимостей.">
+  <meta name="author" content="MkDocs Custom Theme Team">
+  <meta name="keywords" content="MkDocs, документация, тема, HTML, CSS, JavaScript, типографика">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Russian">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourusername.github.io/mkdocs/">
+  <meta property="og:title" content="MkDocs Custom Theme — Современная тема для документации">
+  <meta property="og:description" content="Кастомная тема для MkDocs на чистом HTML, CSS и JavaScript. Адаптивный дизайн, быстрая загрузка, типографика и минификация без внешних зависимостей.">
+  <meta property="og:image" content="https://yourusername.github.io/mkdocs/assets/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourusername.github.io/mkdocs/">
+  <meta property="twitter:title" content="MkDocs Custom Theme — Современная тема для документации">
+  <meta property="twitter:description" content="Кастомная тема для MkDocs на чистом HTML, CSS и JavaScript. Адаптивный дизайн, быстрая загрузка, типографика и минификация без внешних зависимостей.">
+  <meta property="twitter:image" content="https://yourusername.github.io/mkdocs/assets/og-image.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%236ea8fe'/></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark" aria-hidden="true">●</span>
+        <span class="brand-text">MkDocs Theme</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="./index.html" class="nav-link is-active">Главная</a>
+        <a href="./index.md" class="nav-link">Документация</a>
+        <a href="#contact" class="nav-link">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="hero-title">Современная тема на чистом HTML, CSS и JS</h1>
+        <p class="hero-subtitle">Адаптивная сетка, быстрый рендер, никаких библиотек. Готово к интеграции в любой проект или генератор документации.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Смотреть проекты</a>
+          <a href="index.md" class="btn btn-ghost">Открыть документацию</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Подборка проектов</h2>
+          <p class="section-desc">Карточки, сетка, hover‑состояния, доступность — всё из коробки.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-media" style="--bg:#CDE7FF"></div>
+            <div class="card-body">
+              <h3 class="card-title">Dashboard</h3>
+              <p class="card-text">Аналитика, таблицы, фильтры. Респонсивный layout на CSS Grid.</p>
+              <a class="card-link" href="#">Открыть →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media" style="--bg:#E8E7FF"></div>
+            <div class="card-body">
+              <h3 class="card-title">Портфолио</h3>
+              <p class="card-text">Галерея работ, модальные окна, плавная анимация без библиотек.</p>
+              <a class="card-link" href="#">Открыть →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media" style="--bg:#FFE7D1"></div>
+            <div class="card-body">
+              <h3 class="card-title">Лендинг</h3>
+              <p class="card-text">Чёткая типографика, акцентные CTA, высокая скорость загрузки.</p>
+              <a class="card-link" href="#">Открыть →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media" style="--bg:#E5F6EE"></div>
+            <div class="card-body">
+              <h3 class="card-title">Блог</h3>
+              <p class="card-text">Настраиваемая подсветка кода, удобная навигация, адаптивные таблицы.</p>
+              <a class="card-link" href="#">Открыть →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2 class="cta-title">Нужна своя тема под Figma‑макет?</h2>
+        <p class="cta-text">Разработаю по вашему дизайну или адаптирую текущую разметку под любой UI.</p>
+        <a class="btn btn-primary" href="#contact">Связаться</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <span class="footer-brand-mark" aria-hidden="true">●</span>
+          <div class="footer-brand-text">
+            <div class="footer-title">MkDocs Custom Theme</div>
+            <div class="footer-subtitle">Современная тема для документации</div>
+          </div>
+        </div>
+        <div class="footer-meta">
+          <p class="footer-description">Кастомная тема на чистом HTML, CSS и JavaScript. Разработано с использованием Typograf, PostCSS и автоматизированных пайплайнов CI/CD.</p>
+          <div class="footer-copyright">© <span id="year"></span> MkDocs Custom Theme. Все права защищены.</div>
+        </div>
+      </div>
+      <div class="footer-sections">
+        <div class="footer-section">
+          <h4 class="footer-section-title">Навигация</h4>
+          <nav class="footer-nav">
+            <a href="index.html" class="footer-link">Главная</a>
+            <a href="index.md" class="footer-link">Документация</a>
+            <a href="#projects" class="footer-link">Проекты</a>
+          </nav>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-section-title">Ресурсы</h4>
+          <nav class="footer-nav">
+            <a href="https://www.mkdocs.org/" class="footer-link" target="_blank" rel="noopener noreferrer">MkDocs</a>
+            <a href="https://github.com/typograf/typograf" class="footer-link" target="_blank" rel="noopener noreferrer">Typograf</a>
+            <a href="https://postcss.org/" class="footer-link" target="_blank" rel="noopener noreferrer">PostCSS</a>
+          </nav>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-section-title">Контакты</h4>
+          <nav class="footer-nav">
+            <a href="https://github.com" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:info@example.com" class="footer-link">Email</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <span>Автор: MkDocs Custom Theme Team</span>
+          <nav class="footer-bottom-links">
+            <a href="#" class="footer-bottom-link">Политика конфиденциальности</a>
+            <a href="#" class="footer-bottom-link">Условия использования</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <!-- Дизайн вдохновлен макетом: https://www.figma.com/design/fq2JhlHlCT1obHrqgijbi8/Projects?node-id=4567-27349&m=dev -->
+  <!-- Источник: указан пользователем -->
+</body>
+</html>
+
+
