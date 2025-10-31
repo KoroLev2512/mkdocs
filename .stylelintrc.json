@@ -11,7 +11,8 @@
     "declaration-block-single-line-max-declarations": null,
     "rule-empty-line-before": null,
     "font-family-name-quotes": null,
-    "media-feature-range-notation": null
+    "media-feature-range-notation": null,
+    "no-descending-specificity": null
   },
   "ignoreFiles": ["**/*.min.css"]
 }
